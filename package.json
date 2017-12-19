@@ -6,7 +6,7 @@
     "build": "webpack --display-error-details",
     "deploy": "git push heroku master",
     "postinstall": "npm run build",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "async": "^1.5.2",
