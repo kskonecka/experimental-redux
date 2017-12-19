@@ -5,16 +5,20 @@ import cookie from 'react-cookie';
 import { browserHistory } from 'react-router';
 
 // Sign in with Facebook
+//boilerplate id:
+// clientId: '980220002068787',
+//fb id:
 export function facebookLogin() {
   const facebook = {
-    url: '/auth/facebook',
+    url: 'https://obscure-crag-40112.herokuapp.com/auth/facebook',
     clientId: '1551965698224328',
-    redirectUri: '/auth/facebook/callback',
+    redirectUri: 'https://obscure-crag-40112.herokuapp.com/auth/facebook/callback',
     authorizationUrl: 'https://www.facebook.com/v2.5/dialog/oauth',
     scope: 'email,user_location',
     width: 580,
     height: 400
   };
+  console.log('facebook', facebook);
 
   return (dispatch) => {
     oauth2(facebook, dispatch)

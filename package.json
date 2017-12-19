@@ -4,9 +4,9 @@
   "description": "My app description",
   "scripts": {
     "build": "webpack --display-error-details",
-    "deploy": "npm test && git push heroku master",
+    "deploy": "git push heroku master",
     "postinstall": "npm run build",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "async": "^1.5.2",
